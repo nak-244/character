@@ -3,7 +3,7 @@
 // ----------基本設定開始---------- //
 
 // 送信先メールアドレス
-$adminMail = "";
+$adminMail = "t09024656860@gmail.com";
 
 
 // 送信先メールアドレスを配列化(編集しないでください)
@@ -12,11 +12,11 @@ $adminArray = explode(',', $adminMail);
 
 
 // 送信者名
-$adminName = "";
+$adminName = "株式会社オープンループパートナーズ";
 
 
 // 送信後に戻るURL
-$returnUrl = "";
+$returnUrl = "https://www.olp.co.jp/lp/2019character/";
 
 
 // 送信完了メッセージ
