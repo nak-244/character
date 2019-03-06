@@ -20,20 +20,6 @@
 </head>
 
 <body id="top">
-  <!-- Navbar -->
-  <!-- Navbar sp -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-bottom sp ">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-sm-12">
-          <p class="text-light text-center">採用作品には賞金50,000円！</p>
-        </div>
-        <div class="col-12 col-sm-12 text-center">
-          <a class="btn navbar-btn ml-md-2 btn-light text-dark" href="intro.html">エントリーフォーム</a>
-        </div>
-      </div>
-    </div>
-  </nav>
   <div class="py-5 text-center bg-primary">
     <div class="container">
       <div class="row">
@@ -48,8 +34,23 @@
       <div class="row">
         <div class="col-md-12">
           <form class="">
-            <div class="form-group"> <label>Email address</label> <input type="email" class="form-control" placeholder="Enter email"> <small class="form-text text-muted">We'll never share your email with anyone else.</small> </div>
-            <div class="form-group"> <label>Password</label> <input type="password" class="form-control" placeholder="Password"> </div> <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-group">
+              <label>お名前（必須）</label> <input type="hidden" name="お名前[params]" value="名前">
+              <input type="text" name="お名前[value]" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>メールアドレス（必須）</label> <input type="hidden" name="メールアドレス[params]" value="メール">
+              <input type="text" name="メールアドレス[value]" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>電話番号（必須）</label> <input type="hidden" name="電話番号[params]" value="電話番号,必須">
+              <input type="text" name="電話番号[value]" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>お名前</label>
+              <input type="text" name="お名前[value]" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
@@ -60,7 +61,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- Script: Smooth scrolling between anchors in the same page -->
   <script src="js/smooth-scroll.js"></script>
-
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
