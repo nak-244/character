@@ -33,6 +33,14 @@
         <div class="col-md-12">
           <form action="./Monaka/confirmation.php" enctype="multipart/form-data" method="post">
             <div class="form-group">
+              <label>スタッフコード</label> <input type="hidden" name="スタッフコード[params]" value="スタッフコード">
+              <input type="text" name="スタッフコード[value]" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>登録支店（必須）</label> <input type="hidden" name="登録支店[params]" value="登録支店,必須">
+              <input type="text" name="登録支店[value]" class="form-control">
+            </div>
+            <div class="form-group">
               <label>お名前（必須）</label> <input type="hidden" name="お名前[params]" value="名前">
               <input type="text" name="お名前[value]" class="form-control">
             </div>
