@@ -79,15 +79,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <label><input name="性別[value]" value="女" type="radio"> 女</label>
             </div>
             <div class="form-group">
-              <label>添付ファイル</label>
-              <input type="hidden" name="添付ファイル1[params]" value="必須">
-              <br>
-              <input type="file" name="添付ファイル1">
+              <label>キャラクター名</label> <input type="hidden" name="キャラクター名[params]" value="キャラクター名">
+              <input type="text" name="キャラクター名[value]" class="form-control">
+              <p>※キャラクター名はあくまでも参考とさせていただきます。</p>
             </div>
             <div class="form-group">
-              <label>キャラクターのお名前</label> <input type="hidden" name="キャラクターのお名前[params]" value="キャラクターのお名前">
-              <input type="text" name="キャラクターのお名前[value]" class="form-control">
-              <p>※キャラクターの名前はあくまでも参考とさせていただきます。</p>
+              <label>添付ファイル<span class="text-danger">（必須）</span></label>
+              <input type="hidden" name="添付ファイル[params]" value="添付ファイル,必須">
+              <br>
+              <input type="file" name="添付ファイル">
             </div>
             <input type="submit" value="確認する" class="btn btn-primary my-5">
           </form>
