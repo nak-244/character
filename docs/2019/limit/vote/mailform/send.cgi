@@ -24,13 +24,13 @@ $conf{'spam_message'} = 'スパム行為の可能性があるため、送信で�
 $conf{'sendmail'} = '/usr/sbin/sendmail';
 
 #06.設置者のアドレス(カンマ区切り)
-$conf{'mailto'} = 't09024656860@gmail.com';
+$conf{'mailto'} = 'tsuyoshi.nakamura@openloop.co.jp';
 
 #07.送信完了時にリダイレクトするサンクスページ
 $conf{'thanks'} = 'https://www.olp.co.jp/lp/2019character/2019/limit/vote/';
 
 #08.設置者に届くメールの件名
-$conf{'subject'} = '【しごとら】キャラクター投票がありました';
+$conf{'subject'} = '【7114】しごとら キャラクター投票がありました';
 
 #09.送信者に届くメールの件名
 $conf{'res_subject'} = '【しごとら】キャラクター投票ありがとうございます';
@@ -38,7 +38,7 @@ $conf{'res_subject'} = '【しごとら】キャラクター投票ありがと�
 #10.送信者に届くメールの本文
 $conf{'res_body'} = <<'__res_body_eof__';
 
-【しごとら】キャラクター投票受け付けました。
+キャラクター投票受け付けました。
 
 
 
