@@ -9,52 +9,40 @@ use Jcode;
 ########################################################################
 
 #00.テスト時の誤送信を制御 / 0にしないとメールが飛びません
-$conf{'debug'} = 1;
+$conf{'debug'} = 0;
 
 #03.スパムブロック([URL]や[LINK]、<a>タグが含まれた送信をブロック) 1:ON / 0:OFF
-$conf{'spam_block'} = 1;
+$conf{'spam_block'} = 0;
 
 #03-01.送信文字列にURLが含まれる場合に送信をブロック 1:ON / 0:OFF
-$conf{'spam_url_block'} = 1;
+$conf{'spam_url_block'} = 0;
 
 #03-02.スパム判定時に表示されるメッセージ
 $conf{'spam_message'} = 'スパム行為の可能性があるため、送信できません。<br />送信内容にURLを含める事はできません。';
 
 #04.sendmailのパス(サーバ会社へお問い合わせ下さい)
-$conf{'sendmail'} = '/usr/sbin/sendmail';
+$conf{'sendmail'} = '/usr/lib/sendmail';
 
 #06.設置者のアドレス(カンマ区切り)
-$conf{'mailto'} = '******';
+$conf{'mailto'} = 't09024656860@gmail.com';
 
 #07.送信完了時にリダイレクトするサンクスページ
-$conf{'thanks'} = 'http://cgi.synck.com/mailform/thanks.html';
+$conf{'thanks'} = 'https://www.olp.co.jp/lp/2019character/2019/limit/vote/thanks.html';
 
 #08.設置者に届くメールの件名
-$conf{'subject'} = 'メールフォームから';
+$conf{'subject'} = '【しごとら】キャラクター投票がありました';
 
 #09.送信者に届くメールの件名
-$conf{'res_subject'} = 'お問い合わせありがとうございます';
+$conf{'res_subject'} = '【しごとら】キャラクター投票ありがとうございます';
 
 #10.送信者に届くメールの本文
 $conf{'res_body'} = <<'__res_body_eof__';
-この度はお問い合せ頂き誠にありがとうございました。
-改めて担当者よりご連絡をさせていただきます。
+お疲れ様です。
 
-─ご送信内容の確認─────────────────
-<resbody>
-──────────────────────────
+【しごとら】キャラクター投票受け付けました。
 
-このメールに心当たりの無い場合は、お手数ですが
-下記連絡先までお問い合わせください。
 
-この度はお問い合わせ重ねてお礼申し上げます。
-━━━━━━━━━━━━━━━━━━━━━━━━━━
-　※この署名はサンプルです。必ず変更してください※　
-　シンクグラフィカ / SYNCKGRAPHICA
-　〒003-0801 札幌市白石区菊水一条四丁目一番三十九号
-　TEL / 011-832-8698　FAX / 011-832-8698
-　http://www.synck.com
-━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 __res_body_eof__
 
 
@@ -66,16 +54,16 @@ $conf{'geoplus'} = 0;
 ########################################################################
 
 #01.リファラーによるスパムチェック 1:ON / 0:OFF
-$conf{'domain_check'} = 1;
+$conf{'domain_check'} = 0;
 
 #01.リファラー(送信元)のURLの一部か全部
 $conf{'domain'} = $ENV{'SERVER_NAME'};
 
 #02.HTML側での設定を無効化(タダ乗り対策) 1:ON / 0:OFF
-$conf{'html_vals_disabled'} = 1;
+$conf{'html_vals_disabled'} = 0;
 
 #03.全てが英文の送信を拒否 1:ON / 0:OFF
-$conf{'language_check'} = 1;
+$conf{'language_check'} = 0;
 
 #04.Javascript非動作スパムチェック 1:ON / 0:OFF
 $conf{'javascript'} = 0;
@@ -84,11 +72,11 @@ $conf{'javascript'} = 0;
 $conf{'serial_file'} = 'count.dat';
 
 #12.件名に通し番号を付ける 1:ON / 0:OFF
-$conf{'subject_serial'} = 1;
+$conf{'subject_serial'} = 0;
 
 #12.送信履歴保存用ファイルとダウンロードパスワード
-#$conf{'log_file'} = 'sendlog.cgi';
-#$conf{'log_passwd'} = '0123';
+$conf{'log_file'} = 'sendlog.cgi';
+$conf{'log_passwd'} = '0123';
 
 #13.送信文字コード
 $conf{'charset'} = 'ISO-2022-JP';
