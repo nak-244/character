@@ -24,7 +24,7 @@ $conf{'spam_message'} = 'スパム行為の可能性があるため、送信で�
 $conf{'sendmail'} = '/usr/sbin/sendmail';
 
 #06.設置者のアドレス(カンマ区切り)
-$conf{'mailto'} = 'olp-service-promotion@openloop.co.jp';
+$conf{'mailto'} = 'tsuyoshi.nakamura@openloop.co.jp';
 
 #07.送信完了時にリダイレクトするサンクスページ
 $conf{'thanks'} = 'https://www.olp.co.jp/lp/2019character/2019/limit/vote/thanks.html';
