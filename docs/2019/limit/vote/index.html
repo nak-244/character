@@ -79,10 +79,10 @@
     </div>
   </div>
   <form id="mailform" method="post" action="mailform/send.cgi" onsubmit="return sendmail(this);">
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
             <table class="table table-bordered">
               <tbody>
                 <tr>
@@ -212,16 +212,15 @@
                 </tr>
               </tbody>
             </table>
-            <div class="form-group"> <label>メールアドレス</label> <input type="email" class="form-control" name="email(必須)"> <small class="form-text text-muted">会社のメールアドレスを入力してください。それ以外のメールアドレスは無効票となります。</small> </div>
-            <div class="form-group"> <label>お名前</label> <input type="text" class="form-control" name="お名前(必須)"></div>
-            <div class="form-group"> <label>所属（支店・部署）</label> <input type="text" class="form-control" name="所属(必須)"> </div>
-            <button type="submit">投票する</button>
+            <div class="form-group"> <label class="mt-4">メールアドレス</label> <input type="email" class="form-control" name="email(必須)"> <small class="form-text text-muted">会社のメールアドレスを入力してください。それ以外のメールアドレスは無効票となります。</small> </div>
+            <div class="form-group"> <label class="mt-4">お名前</label> <input type="text" class="form-control" name="お名前(必須)"></div>
+            <div class="form-group"> <label class="mt-4">所属（支店・部署）</label> <input type="text" class="form-control" name="所属(必須)"> </div>
+            <button type="submit" class="mt-4">投票する</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </form>
-
   <script type="text/javascript" src="mailform/mailform.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
