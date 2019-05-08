@@ -301,10 +301,10 @@ sub getQuery {
 	my($packed_addr) = pack("C4", $addr[0], $addr[1], $addr[2], $addr[3]);
 	my($name, $aliases, $addrtype, $length, @addrs);
 	($name, $aliases, $addrtype, $length, @addrs) = gethostbyaddr($packed_addr, 2);
-	$admin_posted_body .= "\n\n\[ HOST NAME \] ${name}\n";
-	$admin_posted_body .= "\[ IP ADDRESS \] $ENV{'REMOTE_ADDR'}\n";
-	$admin_posted_body .= "\[ USER AGENT \] $ENV{'HTTP_USER_AGENT'}\n";
-	$admin_posted_body .= "\[ HTTP REFERER \] $ENV{'HTTP_REFERER'}";
+#	$admin_posted_body .= "\n\n\[ HOST NAME \] ${name}\n";
+#	$admin_posted_body .= "\[ IP ADDRESS \] $ENV{'REMOTE_ADDR'}\n";
+#	$admin_posted_body .= "\[ USER AGENT \] $ENV{'HTTP_USER_AGENT'}\n";
+#	$admin_posted_body .= "\[ HTTP REFERER \] $ENV{'HTTP_REFERER'}";
 	$admin_posted_body = $posted_body . $admin_posted_body;
 	$conf{'res_body'} =~ s/<resbody>/$posted_body/g;
 	push @field,"HOST NAME";
