@@ -90,7 +90,7 @@ $conf{'lang'} = 1;
 ##MAIN##################################################################
 ########################################################################
 ($sec,$min,$hour,$day,$mon,$year) = localtime(time);$mon++;$year += 1900;
-$posted_body = sprintf("%04d-%02d-%02d %02d:%02d:%02d\n\n",$year,$mon,$day,$hour,$min,$sec);
+# $posted_body = sprintf("%04d-%02d-%02d %02d:%02d:%02d\n\n",$year,$mon,$day,$hour,$min,$sec);
 $conf{'download_file_name'} = sprintf("%04d-%02d-%02d.csv",$year,$mon,$day,$hour,$min,$sec);
 push @field, "DATE";
 push @record, sprintf("%04d-%02d-%02d %02d:%02d:%02d",$year,$mon,$day,$hour,$min,$sec);
