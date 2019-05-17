@@ -27,7 +27,7 @@ $conf{'sendmail'} = '/usr/sbin/sendmail';
 $conf{'mailto'} = 'tsuyoshi.nakamura@openloop.co.jp';
 
 #07.送信完了時にリダイレクトするサンクスページ
-$conf{'thanks'} = 'https://www.olp.co.jp/lp/2019character/2019/limit/vote/thanks.html';
+$conf{'thanks'} = 'https://www.olp.co.jp/lp/2019character/2019_02/limit/vote/thanks.html';
 
 #08.設置者に届くメールの件名
 $conf{'subject'} = '【1684】しごとら キャラクター投票がありました';
