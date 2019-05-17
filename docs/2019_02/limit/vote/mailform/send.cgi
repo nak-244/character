@@ -30,7 +30,7 @@ $conf{'mailto'} = 'tsuyoshi.nakamura@openloop.co.jp';
 $conf{'thanks'} = 'https://www.olp.co.jp/lp/2019character/2019/limit/vote/thanks.html';
 
 #08.設置者に届くメールの件名
-$conf{'subject'} = '【7114】しごとら キャラクター投票がありました';
+$conf{'subject'} = '【1684】しごとら キャラクター投票がありました';
 
 #09.送信者に届くメールの件名
 $conf{'res_subject'} = '【しごとら】キャラクター投票ありがとうございます';
